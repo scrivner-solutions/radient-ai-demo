@@ -1,0 +1,9 @@
+{
+  "modality": "MRI",
+  "goal": "Reduce staff overtime costs while keeping patient wait times below 20 minutes.",
+  "constraints": {
+    "maxFteReduction": 1.5,
+    "enforceCoverageFloor": true,
+    "maxBurnoutIndexAllowed": 70
+  }
+}

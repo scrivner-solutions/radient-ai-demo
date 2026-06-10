@@ -1,0 +1,38 @@
+{
+  "requestExample": {
+    "jsonrpc": "2.0",
+    "id": "req-987654",
+    "method": "sendMessage",
+    "params": {
+      "message": {
+        "messageId": "msg-112233",
+        "role": "user",
+        "kind": "message",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "{\"modality\":\"CT\",\"goal\":\"Reduce staffing costs while keeping wait times under 15 minutes.\",\"constraints\":\"Enforce minimum coverage rule.\"}"
+          }
+        ]
+      }
+    }
+  },
+  "responseExample": {
+    "jsonrpc": "2.0",
+    "id": "req-987654",
+    "result": {
+      "message": {
+        "messageId": "msg-445566",
+        "role": "agent",
+        "kind": "message",
+        "contextId": "context-uuid",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "{\n  \"baselineSummary\": {\n    \"modality\": \"CT\",\n    \"currentWorkedFte\": 6.2,\n    \"averageWaitMinutes\": 14,\n    \"burnoutAlertLevel\": \"Low\"\n  },\n  \"scenariosEvaluated\": [\n    {\n      \"scenarioId\": \"cross-train-xray\",\n      \"description\": \"Cross-train 2 X-ray technicians to cover CT breaks\",\n      \"fteDelta\": 0,\n      \"costDelta\": 1200,\n      \"waitMinutesDelta\": -3,\n      \"burnoutRiskIndex\": 25,\n      \"score\": 88\n    }\n  ],\n  \"recommendedScenario\": {\n    \"scenarioId\": \"cross-train-xray\",\n    \"score\": 88\n  },\n  \"executiveExplanation\": \"[Mock Explanation] Cross-training existing staff from X-ray provides cover during peak hours without incurring premium labor overtime fees.\"\n}"
+          }
+        ]
+      }
+    }
+  }
+}

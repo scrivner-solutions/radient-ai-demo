@@ -1,0 +1,86 @@
+{
+  "executionMode": "remote-a2a",
+  "baselineSummary": {
+    "modality": "MRI",
+    "workedFte": 8.4,
+    "paidFte": 9.2,
+    "overtimePercent": 14.8,
+    "scannerUtilization": 86.5,
+    "averageWaitMinutes": 22,
+    "burnoutRiskScore": 68
+  },
+  "scenariosEvaluated": [
+    {
+      "scenarioId": "extend-operational-hours",
+      "name": "Extend Opening Hours (+2 hrs)",
+      "inputs": {
+        "openingHours": 16,
+        "fteAllocation": 8.4
+      },
+      "outputs": {
+        "workedFte": 8.4,
+        "paidFte": 8.8,
+        "overtimePercent": 4.8,
+        "scannerUtilization": 75.2,
+        "averageWaitMinutes": 12,
+        "burnoutRiskScore": 42
+      },
+      "feasibility": {
+        "isValid": true,
+        "warnings": []
+      },
+      "score": 94
+    },
+    {
+      "scenarioId": "cross-train-ct-staff",
+      "name": "Cross-Train CT Technologists",
+      "inputs": {
+        "openingHours": 14,
+        "fteAllocation": 9.0
+      },
+      "outputs": {
+        "workedFte": 9.0,
+        "paidFte": 9.4,
+        "overtimePercent": 8.2,
+        "scannerUtilization": 84.1,
+        "averageWaitMinutes": 16,
+        "burnoutRiskScore": 51
+      },
+      "feasibility": {
+        "isValid": true,
+        "warnings": []
+      },
+      "score": 86
+    },
+    {
+      "scenarioId": "reduce-peak-fte",
+      "name": "Reduce Peak FTE (-1.0)",
+      "inputs": {
+        "openingHours": 14,
+        "fteAllocation": 7.4
+      },
+      "outputs": {
+        "workedFte": 7.4,
+        "paidFte": 7.6,
+        "overtimePercent": 22.4,
+        "scannerUtilization": 88.0,
+        "averageWaitMinutes": 29,
+        "burnoutRiskScore": 84
+      },
+      "feasibility": {
+        "isValid": false,
+        "warnings": [
+          "Minimum staffing coverage floor violated during lunch peak.",
+          "Technician burnout score exceeds constraint limit."
+        ]
+      },
+      "score": 45
+    }
+  ],
+  "recommendedScenario": {
+    "scenarioId": "extend-operational-hours",
+    "name": "Extend Opening Hours (+2 hrs)",
+    "score": 94
+  },
+  "executiveExplanation": "[Mock Executive Summary] Extending daily opening hours by 2 hours successfully redistributes patient demand and reduces backlogs. This configuration lowers overall technologist overtime from 14.8% to 4.8% and reduces patient wait times to 12 minutes, offering a sustainable operational balance without requiring additional FTE hiring."
+}

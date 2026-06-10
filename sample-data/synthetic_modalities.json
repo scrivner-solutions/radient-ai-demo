@@ -1,0 +1,31 @@
+{
+  "modalities": {
+    "CT": {
+      "name": "Computed Tomography",
+      "activeScanners": 2,
+      "openingHours": 16,
+      "baseScansPerHour": 2.5,
+      "peakFteNeeded": 4.0,
+      "offPeakFteNeeded": 2.0,
+      "weeklyScanTarget": 280
+    },
+    "MRI": {
+      "name": "Magnetic Resonance Imaging",
+      "activeScanners": 2,
+      "openingHours": 14,
+      "baseScansPerHour": 1.2,
+      "peakFteNeeded": 3.0,
+      "offPeakFteNeeded": 1.5,
+      "weeklyScanTarget": 150
+    },
+    "XRAY": {
+      "name": "General Radiography (X-Ray)",
+      "activeScanners": 4,
+      "openingHours": 24,
+      "baseScansPerHour": 5.0,
+      "peakFteNeeded": 5.0,
+      "offPeakFteNeeded": 2.0,
+      "weeklyScanTarget": 800
+    }
+  }
+}

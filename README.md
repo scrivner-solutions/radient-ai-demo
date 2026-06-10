@@ -1,7 +1,7 @@
 # Radient AI — Intelligent Radiology Operations & Scenario Explorer
 
 <p align="center">
-<img src="images/radient_architecture.png" width="900">
+<img src="images/radient_overview.png" width="900" alt="Overview">
 </p>
 
 > **Live Demo:** [https://rad-ai.solutions](https://rad-ai.solutions)  

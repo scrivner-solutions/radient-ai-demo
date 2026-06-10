@@ -1,0 +1,8 @@
+graph TD
+  Users[Users] -->|HTTPS| FE[Frontend Dashboard]
+  FE -->|REST API| BE[Backend API]
+  BE -->|JSON-RPC 2.0| AE[Remote Scenario Explorer Agent]
+  AE -->|API Call| Gemini[Gemini 2.5 Flash]
+  Gemini -->|Generates Explanation| AE
+  AE -->|Ranked Scenarios| BE
+  BE -->|Visualized Output| FE

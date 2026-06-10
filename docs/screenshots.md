@@ -141,4 +141,8 @@ Cloud Console showing custom domains successfully bound to `https://rad-ai.solut
 
 ## 8. High-Level Architecture Diagram / A2A Flow
 Visual representations of the request flow from the browser, through the backend serving layer, and down to the A2A Scenario Agent microservice.
-*(Screenshot path: `screenshots/architecture_diagram.png` - Placeholder)*
+
+<p align="center">
+  <img src="../images/radient_architecture.png" width="750" alt="Radient AI Architecture Overview">
+</p>
+

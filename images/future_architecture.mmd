@@ -1,0 +1,10 @@
+graph TD
+  subgraph Current
+    CR_FE[Frontend Service] --> CR_BE[Backend Service]
+    CR_BE --> CR_SA[Scenario Agent Service]
+  end
+  subgraph Future
+    V_FE[Frontend Service] --> V_BE[Backend Service]
+    V_BE --> V_AE[Vertex AI Agent Engine]
+    V_AE --> V_SA[Specialized Agents]
+  end

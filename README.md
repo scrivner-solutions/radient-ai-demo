@@ -1,4 +1,4 @@
-# Radient AI — Intelligent Radiology Operations & Scenario Explorer
+# Radient AI: Intelligent Radiology Operations & Scenario Explorer
 
 <p align="center">
 <img src="images/radient_overview.png" width="900">

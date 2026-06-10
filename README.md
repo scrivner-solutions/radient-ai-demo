@@ -9,23 +9,9 @@
 
 ---
 
-## 📋 Table of Contents
-1. [Project Overview](#-project-overview)
-2. [The Problem Statement](#-the-problem-statement)
-3. [The Solution: Radient AI](#-the-solution-radient-ai)
-4. [Why Agentic AI?](#-why-agentic-ai)
-5. [Key Features](#-key-features)
-6. [Tech Stack](#-tech-stack)
-7. [Product Walkthrough](#-product-walkthrough)
-8. [Architecture Overview](#-architecture-overview)
-9. [Why This Architecture Matters](#-why-this-architecture-matters)
-10. [Future Vision](#-future-vision)
-11. [Google Cloud Challenge Alignment](#-google-cloud-challenge-alignment)
-
----
 
 ## 🔍 Project Overview
-**Radient AI** is an agentic operational intelligence platform designed to help radiology leaders optimize staffing, reduce technologist burnout, improve scanner utilization, and evaluate operational tradeoffs through explainable AI. By separating deterministic calculation logic from generative explanations, Radient AI delivers mathematical precision backed by Gemini-powered explanation, recommendations, and remote Agent-to-Agent (A2A) orchestration.
+**Radient AI** is an agentic operational intelligence platform designed to help radiology leaders optimize staffing, reduce technologist burnout, improve scanner utilization, and evaluate operational tradeoffs through explainable AI. By separating deterministic calculation logic from generative explanations, Radient AI delivers mathematical precision backed by Gemini-powered explanations, recommendations, and remote Agent-to-Agent (A2A) orchestration.
 
 ---
 
